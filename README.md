@@ -47,6 +47,18 @@ Time:   cafeína-dependente ☕
 
 <p align="center"><img src="./assets/divider.svg" width="100%"/></p>
 
+## Portfólio de QA
+
+Projetos de teste automatizado, cada um com integração contínua e relatório publicado.
+
+| Projeto | O que testa | Ferramentas | Relatório |
+|---|---|---|---|
+| [qa-portfolio](https://github.com/pamteech/qa-portfolio) | Testes ponta a ponta do app Treino &amp; Diário Cripto | Playwright, Allure | [repositório](https://github.com/pamteech/qa-portfolio) |
+| [qa-api-cripto](https://github.com/pamteech/qa-api-cripto) | Contrato, dados e desempenho de APIs públicas de cripto (CoinGecko, Binance, mempool.space) | Postman, Newman, k6 | [painel](https://pamteech.github.io/qa-api-cripto/) |
+| [qa-ledger-speculos](https://github.com/pamteech/qa-ledger-speculos) | Carteira de hardware Ledger Nano S Plus no emulador Speculos: tela, botões, rejeição e assinaturas verificadas | pytest, Speculos, Docker | [painel](https://pamteech.github.io/qa-ledger-speculos/) |
+
+<p align="center"><img src="./assets/divider.svg" width="100%"/></p>
+
 ## 🛠️ O que estou construindo
 
 <table>
