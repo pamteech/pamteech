@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <title>Sem print</title>
+  <rect width="800" height="450" rx="16" fill="#16132B"/>
+  <rect x="16" y="16" width="768" height="418" rx="12" fill="none" stroke="#A855F7" stroke-width="3" stroke-dasharray="10 8"/>
+  <text x="400" y="234" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="28" font-weight="700" fill="#F3E8FF">sem print</text>
+</svg>
