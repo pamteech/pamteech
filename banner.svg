@@ -19,7 +19,7 @@
 <circle class="glow" cx="1050" cy="60" r="140" fill="#A855F7" opacity=".12"/>
 <circle cx="980" cy="260" r="110" fill="#39FF88" opacity=".08"/>
 <text x="70" y="95" font-family="JetBrains Mono,Consolas,monospace" font-size="20" fill="#39FF88">&gt; npx playwright test --project=vida_real<tspan class="cur">▌</tspan></text>
-<text x="66" y="185" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="88" font-weight="800" fill="url(#t)">Pam Tech</text>
+<text x="66" y="185" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="88" font-weight="800" fill="url(#t)">Pam Teech</text>
 <text x="70" y="235" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="26" fill="#E5E7EB">QA que quebra pra melhorar · IA na vida real · pets em pixel art</text>
 <g font-family="JetBrains Mono,Consolas,monospace" font-size="16" fill="#8B85B8">
 <text x="70" y="270">✔ </text>
