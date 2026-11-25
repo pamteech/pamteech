@@ -1,20 +1,48 @@
 name: Cobrinha de contribuições
+
 on:
-  schedule: [{ cron: "0 */12 * * *" }]
+  schedule:
+    # Todo dia às 03:15 no horário de Brasília (06:15 UTC).
+    - cron: "15 6 * * *"
   workflow_dispatch:
-  push: { branches: [main] }
-permissions: { contents: write }
+
+permissions:
+  contents: write
+
 jobs:
   generate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
-      - uses: Platane/snk@v3
+      - name: Gerar a cobrinha
+        uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/snake-dark.svg?palette=github-dark&color_snake=#39FF88&color_dots=#161B22,#3B2470,#6D28D9,#A855F7,#22D3EE
-            dist/snake-light.svg?color_snake=#7C3AED&color_dots=#EBEDF0,#E9D5FF,#C084FC,#A855F7,#0891B2
+            dist/snake-dark.svg?color_snake=#39FF88&color_dots=#1A1630,#4C1D95,#7C3AED,#A855F7,#22D3EE
+            dist/snake-light.svg?color_snake=#39FF88&color_dots=#EDE9FE,#E9D5FF,#C084FC,#A855F7,#0891B2
+
+      - name: Aplicar o fundo da paleta nos SVGs
+        run: |
+          python3 << 'PY'
+          from pathlib import Path
+          for name, bg in [("dist/snake-dark.svg", "#0D0B1E"), ("dist/snake-light.svg", "#F8F7FF")]:
+              p = Path(name)
+              t = p.read_text(encoding="utf-8")
+              if 'class="bg"' in t or "class='bg'" in t:
+                  p.write_text(t, encoding="utf-8")
+                  continue
+              needle = "<svg "
+              i = t.find(needle)
+              if i < 0:
+                  raise SystemExit(f"SVG inesperado em {name}")
+              end = t.find(">", i)
+              rect = f'<rect class="bg" x="-16" y="-32" width="880" height="192" fill="{bg}"/>'
+              t = t[: end + 1] + rect + t[end + 1 :]
+              p.write_text(t, encoding="utf-8")
+              print("fundo aplicado:", name, bg)
+          PY
+
       - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output

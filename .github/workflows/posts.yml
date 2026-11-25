@@ -1,0 +1,32 @@
+name: Atualiza conteúdo recente
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - posts.json
+      - .github/scripts/render-posts.py
+      - .github/workflows/posts.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Montar o bloco a partir de posts.json
+        run: python3 .github/scripts/render-posts.py
+      - name: Enviar o README se mudou
+        run: |
+          git config user.name "Pam Teech"
+          git config user.email "346481266+pamteech@users.noreply.github.com"
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "README já estava atualizado."
+          else
+            git commit -m "Atualiza o bloco de conteúdo recente a partir de posts.json"
+            git push
+          fi

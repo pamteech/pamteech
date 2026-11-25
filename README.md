@@ -47,9 +47,18 @@ Time:   cafeína-dependente ☕
 
 <p align="center"><img src="./assets/divider.svg" width="100%"/></p>
 
+<!-- POSTS:START -->
+## 📣 Conteúdo recente
+
+Posts e materiais novos da Pam Teech. O Instagram é o [@pamteech](https://instagram.com/pamteech).
+
+- [Pam Teech no Instagram](https://instagram.com/pamteech) (25/11/2026) — IA na vida real e QA que quebra pra melhorar.
+
+<!-- POSTS:END -->
+
 ## 🧪 Portfólio de QA
 
-Suítes de teste automatizadas e relatórios publicados no GitHub Pages. O hub é o [`qa-portfolio`](https://github.com/pamteech/qa-portfolio).
+Suítes de teste automatizadas e relatórios publicados no GitHub Pages. O hub é o [`qa-portfolio`](https://github.com/pamteech/qa-portfolio) — [ver demo](https://pamteech.github.io/qa-portfolio/).
 
 <table>
 <tr>
@@ -57,13 +66,15 @@ Suítes de teste automatizadas e relatórios publicados no GitHub Pages. O hub �
 <h3>🪙 qa-api-cripto</h3>
 Testes de contrato, dados e desempenho de APIs públicas de cripto com Postman, Newman e k6.<br/><br/>
 <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white" alt="Postman"/> <img src="https://img.shields.io/badge/k6-7D64FF?style=flat-square&logo=k6&logoColor=white" alt="k6"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=0D0B1E" alt="JavaScript"/> <img src="https://img.shields.io/badge/status-publicado-16803C?style=flat-square&labelColor=0D0B1E" alt="publicado"/><br/><br/>
-<a href="https://github.com/pamteech/qa-api-cripto">Repositório</a> · <a href="https://pamteech.github.io/qa-api-cripto/">Relatório</a>
+<img src="https://raw.githubusercontent.com/pamteech/qa-api-cripto/main/docs/painel.png" alt="Painel de qualidade da suíte de API cripto" width="100%"/><br/>
+<a href="https://github.com/pamteech/qa-api-cripto">Repositório</a> · <a href="https://pamteech.github.io/qa-api-cripto/">Ver demo</a>
 </td>
 <td width="50%" valign="top">
 <h3>🔐 qa-ledger-speculos</h3>
 Testes automatizados de carteira de hardware Ledger Nano S Plus no emulador Speculos: tela, botões, APDU e assinaturas verificadas.<br/><br/>
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/> <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white" alt="pytest"/> <img src="https://img.shields.io/badge/status-publicado-16803C?style=flat-square&labelColor=0D0B1E" alt="publicado"/><br/><br/>
-<a href="https://github.com/pamteech/qa-ledger-speculos">Repositório</a> · <a href="https://pamteech.github.io/qa-ledger-speculos/">Relatório</a>
+<img src="https://raw.githubusercontent.com/pamteech/qa-ledger-speculos/main/docs/painel.png" alt="Painel de qualidade da suíte Ledger no Speculos" width="100%"/><br/>
+<a href="https://github.com/pamteech/qa-ledger-speculos">Repositório</a> · <a href="https://pamteech.github.io/qa-ledger-speculos/">Ver demo</a>
 </td>
 </tr>
 </table>
@@ -92,7 +103,7 @@ Porquinho que acompanha investimentos (renda fixa pelo CDI, ações e FIIs da B3
 <h3>🥚 SatoshiPet</h3>
 Bichinho em pixel art que flutua na tela (ou no terminal) e muda de humor com o mercado cripto.<br/><br/>
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/> <img src="https://img.shields.io/badge/Tkinter-0D0B1E?style=flat-square&labelColor=0D0B1E&color=A855F7" alt="Tkinter"/> <img src="https://img.shields.io/badge/status-pronto-16803C?style=flat-square&labelColor=0D0B1E" alt="pronto"/><br/><br/>
-<img src="./assets/projetos/satoshipet-site-desktop.png" alt="SatoshiPet no desktop" width="100%"/>
+<img src="./assets/projetos/satoshipet-site-desktop.png" alt="SatoshiPet no desktop" width="100%"/><br/><a href="https://pamteech.github.io/satoshipet/">Ver demo</a>
 </td>
 <td width="50%" valign="top">
 <h3>🎮 Save Point</h3>
