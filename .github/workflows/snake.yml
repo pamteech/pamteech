@@ -22,30 +22,31 @@ jobs:
             dist/snake-dark.svg?color_snake=#39FF88&color_dots=#1A1630,#4C1D95,#7C3AED,#A855F7,#22D3EE
             dist/snake-light.svg?color_snake=#39FF88&color_dots=#EDE9FE,#E9D5FF,#C084FC,#A855F7,#0891B2
 
-      - name: Aplicar o fundo da paleta nos SVGs
+      - name: Aplicar o fundo da paleta e publicar cópia gravável
         run: |
           python3 << 'PY'
           from pathlib import Path
+          out_dir = Path("dist-pub")
+          out_dir.mkdir(exist_ok=True)
           for name, bg in [("dist/snake-dark.svg", "#0D0B1E"), ("dist/snake-light.svg", "#F8F7FF")]:
-              p = Path(name)
-              t = p.read_text(encoding="utf-8")
-              if 'class="bg"' in t or "class='bg'" in t:
-                  p.write_text(t, encoding="utf-8")
-                  continue
-              needle = "<svg "
-              i = t.find(needle)
-              if i < 0:
-                  raise SystemExit(f"SVG inesperado em {name}")
-              end = t.find(">", i)
-              rect = f'<rect class="bg" x="-16" y="-32" width="880" height="192" fill="{bg}"/>'
-              t = t[: end + 1] + rect + t[end + 1 :]
-              p.write_text(t, encoding="utf-8")
-              print("fundo aplicado:", name, bg)
+              src = Path(name)
+              t = src.read_text(encoding="utf-8")
+              if 'class="bg"' not in t and "class='bg'" not in t:
+                  needle = "<svg "
+                  i = t.find(needle)
+                  if i < 0:
+                      raise SystemExit(f"SVG inesperado em {name}")
+                  end = t.find(">", i)
+                  rect = f'<rect class="bg" x="-16" y="-32" width="880" height="192" fill="{bg}"/>'
+                  t = t[: end + 1] + rect + t[end + 1 :]
+              dest = out_dir / src.name
+              dest.write_text(t, encoding="utf-8")
+              print("fundo aplicado:", dest, bg, "bytes", dest.stat().st_size)
           PY
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
-          build_dir: dist
+          build_dir: dist-pub
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
