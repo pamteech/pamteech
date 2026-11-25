@@ -82,9 +82,9 @@ Web app de estudo, em português, com modo Treino (carteira de teste na Sepolia 
 </td>
 <td width="50%" valign="top">
 <h3>🍡 Pilinha</h3>
-Porquinho que mora no entalhe do Mac e acompanha investimentos (renda fixa pelo CDI, ações e FIIs da B3 e bitcoin), só leitura, com dados locais.<br/><br/>
+Porquinho que acompanha investimentos (renda fixa pelo CDI, ações e FIIs da B3, bitcoin e dólar) no entalhe do Mac e no iPhone. Só leitura; dados locais, com sync opcional cifrado entre os dois.<br/><br/>
 <img src="https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white" alt="Swift"/> <img src="https://img.shields.io/badge/SwiftUI-0D0B1E?style=flat-square&logo=swift&logoColor=39FF88" alt="SwiftUI"/> <img src="https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white" alt="Expo"/> <img src="https://img.shields.io/badge/React%20Native-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React Native"/> <img src="https://img.shields.io/badge/status-em%20construção-22D3EE?style=flat-square&labelColor=0D0B1E" alt="em construção"/><br/><br/>
-<img src="./assets/projetos/pilinha-notch-aberto.gif" alt="Pilinha no entalhe do Mac" width="100%"/><br/><a href="https://pilinvest.vercel.app">Ver demo</a>
+<img src="./assets/projetos/pilinha-notch-aberto.gif" alt="Pilinha no entalhe do Mac (também no iPhone)" width="100%"/><br/><a href="https://pilinvest.vercel.app">Ver demo</a>
 </td>
 </tr>
 <tr>
@@ -135,6 +135,12 @@ Conceito visual de um app para montar um roteiro de pausa no dia (descoberta, re
 Plataforma para atletas do Brasil buscarem bolsa esportiva nos EUA (feed, faculdades, times e bolsas; dados fictícios no protótipo).<br/><br/>
 <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"/> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/> <img src="https://img.shields.io/badge/Drizzle-A855F7?style=flat-square&labelColor=0D0B1E" alt="Drizzle"/> <img src="https://img.shields.io/badge/Neon-24936F?style=flat-square&logo=neon&logoColor=white" alt="Neon"/> <img src="https://img.shields.io/badge/status-em%20construção-22D3EE?style=flat-square&labelColor=0D0B1E" alt="em construção"/><br/><br/>
 <img src="./assets/projetos/app-atletas-feed-desktop.png" alt="Feed do app de atletas no desktop" width="100%"/>
+</td>
+<td width="50%" valign="top">
+<h3>🏁 Lane Eight Coach</h3>
+App pessoal de preparação para provas de corrida fitness híbrida no formato 8 × (1 km + estação): plano até o dia da prova, ritmo, análise e técnica, com app companheiro no Garmin. Nome provisório.<br/><br/>
+<img src="https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white" alt="Expo"/> <img src="https://img.shields.io/badge/React%20Native-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React Native"/> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/> <img src="https://img.shields.io/badge/Garmin-007CC3?style=flat-square&logo=garmin&logoColor=white" alt="Garmin"/> <img src="https://img.shields.io/badge/status-em%20construção-22D3EE?style=flat-square&labelColor=0D0B1E" alt="em construção"/><br/><br/>
+<p align="center"><img src="./assets/projetos/lane-eight-coach-inicio.png" alt="Tela Início do Lane Eight Coach" width="240"/></p>
 </td>
 </tr>
 </table>
